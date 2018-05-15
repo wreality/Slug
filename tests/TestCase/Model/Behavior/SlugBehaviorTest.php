@@ -432,7 +432,7 @@ class SlugBehaviorTest extends TestCase
 
     public function testCallableForUnique()
     {
-        $this->Behavior->config('scope', function ($entity) {
+        $this->Behavior->setConfig('scope', function ($entity) {
             return ['namespace' => $entity->namespace];
         });
 
